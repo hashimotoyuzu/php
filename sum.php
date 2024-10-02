@@ -1,11 +1,17 @@
 <?php
-function sum(){
-  $reslt = 0;
-  for($i = 1; $i <= 10; $i++){
-    $reslt += $i;
+function sum($max) {
+  $result = 0;
+  for($i = 1; $i <= $max; $i++){
+    $result += $i;
   }
-  return $reslt;
+  return $result;
 }
+echo sum(100);
+echo "\n";
+
+
+
+
 
 
 
