@@ -1,13 +1,4 @@
 <?php
-function sum($max) {
-  $result = 0;
-  for($i = 1; $i <= $max; $i++){
-    $result += $i;
-  }
-  return $result;
-}
-echo sum(100);
-echo "\n";
 function double($num) {
   return $num * 2;
 }
@@ -19,17 +10,20 @@ function add($a,$b) {
 echo add(5,3);
 echo "\n";
 $arr = array(1,3,5,7,9);
-  echo (array_product($arr));
-  echo "\n";
-  function max_array($arr){
+function nums($arr) {
+  return $arr[0]*$arr[1]*$arr[2]*$arr[3]*$arr[4];
+}
+echo nums($arr) . "\n";
+function max_array($arr){
     $max_number = $arr[0];
-    foreach($arrs as $arr){
+    foreach($arr as $a) {
+      if($max_number > $arr){
+         $max_number = $arr;
+      }
     }
-  
     return $max_number;
   }
- echo max($arr);
- echo "\n";
+ echo max_array($arr) . "\n";
  $animal = '<p>cat.</p><a href="#dummy">dog</a>';
  echo strip_tags($animal,'p');
  echo "\n";
